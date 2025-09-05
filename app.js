@@ -16,7 +16,7 @@ app.post('/ask', async (req, res) => {
     const response = await axios.post(
       'https://api.groq.com/openai/v1/chat/completions',
       {
-        model: 'llama3-8b-8192', // ✅ This works!
+        model: 'llama-3.3-70b-versatile', // ✅ This works!
         messages: [
           {
             role: 'system',
